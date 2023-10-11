@@ -1,29 +1,110 @@
 <html>
 
 <head>
-    <title> MIS 3033 OCtober 11 Ben Reilly </title>
+    <title> MIS 3033 October 11 Ben Reilly </title>
+
+
+
+    <style>
+        #maindiv {
+            background-color: aliceblue;
+            width: 800px;
+            height: 500px;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+            align-items: flex-end;
+            margin-top:50px;
+        }
+
+        .d1 {
+            width: 100px;
+            height: 120px;
+            margin-left: 10px;
+            margin-top: 10px;
+            background-color: dodgerblue;
+        }
+
+        #webdiv {
+            background-color: antiquewhite;
+            width: 1000px;
+            margin-left: auto;
+            margin-right: auto;
+
+        }
+
+        #footerdiv 
+        {
+            background-color:aliceblue;
+            height:50px;
+            display:flex;
+            flex-direction:row;
+            justify-content:center;
+            align-items:center;
+
+            border-radius:5px;
+            color: darkgray;
+        }
+
+        #bodydiv
+        {
+            background-color: lightcoral;
+            display:flex;
+            flex-direction:row;
+
+
+        }
+
+        #leftdiv
+        {
+            background-color: blueviolet;
+        }
+
+        #rightdiv 
+        {
+            background-color: burlywood;
+            display:flex;
+            flex-direction:column;
+
+            border-radius:10px;
+            border-width:2px;
+            border-style:solid;
+            border-color:darkgray;
+            align-items:center;
+
+        }
+
+    </style>
+
 </head>
 
-<style>
-    #maindiv
-    {
-        background-color:aliceblue;
-        width:800px;
-        height: 500px;
-        display:flex;
-        flex-direction:row;
-    }
-    .d1
-    {
-        width: 100px;
-        height: 120px;
-        margin-left:10px;
-        margin-top:10px;
-        background-color: dodgerblue;
-    }
-</style>
 
 <body>
+
+    <div id="webdiv">
+        web page
+
+        <div id="bodydiv">
+            
+            <div id="leftdiv">
+                left
+            </div>
+
+            <div id="rightdiv">
+                <div style="color:dodgerblue;font-size:20pt; font-weight:bold;"> I love MIS3033 </div>
+
+                <div>
+                    <img style="width:400px;" src="b.svg" />
+                </div>
+
+            </div>
+
+        </div>
+
+        <div id="footerdiv">
+            <span> Designed and Developed by Ben Reilly for MIS 3033 Exam 2 </span>
+        </div>
+    </div>
 
     <div id= "maindiv">
         <div class = "d1"> div1</div>
