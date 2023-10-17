@@ -3,23 +3,86 @@
     <title>MIS 3033 October 16, 2023 JavaScript</title>
 
     <style>
-        #main
-        {
-            width:600px;
-            background-color:lightblue;
+        #main {
+            width: 600px;
+            background-color: lightblue;
         }
 
-        .divstyle
-        {
-            width:60px;
-            height:80px;
-            background-color:lightcyan;
-            border-style:solid;
-            border-width:1px;
-            border-color:black;
-            border-radius:10px;
+        .divstyle {
+            width: 60px;
+            height: 80px;
+            background-color: lightcyan;
+            border-style: solid;
+            border-width: 1px;
+            border-color: black;
+            border-radius: 10px;
         }
     </style>
+
+
+    <script>
+        {
+            "use strict";
+            let i = 1;
+            let j = 2;
+
+            var age1;
+            age1 = 10;
+            Console.log(age1);
+        }
+
+    </script>
+
+    <script>
+        {
+            "use strict";
+            console.log(age1);
+            //console.log(i);
+            let i;
+            let name1 = "tom";
+            name1 = 'tom';
+            name1 = ` tom `;
+
+            name1 = `${name1} age is ${age1}`
+            console.log(name1);
+
+            function f1(n1, n2) {
+                let r;
+                r = n1 * n2;
+                return r;
+            }
+            console.log(f1(3, 4))
+
+            let f2 = (n1, n2) => { return n1 - n2 };
+            //arrow function
+            // anonomys function
+
+            console.log(f2(10, 2));
+
+            // object
+            let stu1 = { name: "tom", age: 20, weight: 120.6, grade: 90 };
+            console.log(stu1.name);
+
+
+            let arr1 = [2, 3, 4, 5];
+
+            for (let i = 0; i < arr1.length; i++) {
+                console.log(arr1[i]);
+            }
+
+            function f3(item) {
+                return item * item;
+            }
+            let arr2 = arr1.map(f3);
+            Console.log(arr2);
+
+            let arr3 = arr1.map((i) => { return i * i * i; });
+            console.log(arr3);
+
+        }
+
+    </script>
+
 
 </head>
 

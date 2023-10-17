@@ -14,7 +14,7 @@
             flex-direction: row;
             justify-content: flex-end;
             align-items: flex-end;
-            margin-top:50px;
+            margin-top: 50px;
         }
 
         .d1 {
@@ -30,50 +30,62 @@
             width: 1000px;
             margin-left: auto;
             margin-right: auto;
-
         }
 
-        #footerdiv 
-        {
-            background-color:aliceblue;
-            height:50px;
-            display:flex;
-            flex-direction:row;
-            justify-content:center;
-            align-items:center;
-
-            border-radius:5px;
+        #footerdiv {
+            background-color: aliceblue;
+            height: 50px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            border-radius: 5px;
             color: darkgray;
         }
 
-        #bodydiv
-        {
+        #bodydiv {
             background-color: lightcoral;
-            display:flex;
-            flex-direction:row;
-
-
+            display: flex;
+            flex-direction: row;
         }
 
-        #leftdiv
-        {
+        #leftdiv {
             background-color: blueviolet;
+            display: flex;
+            flex-direction: column;
         }
 
-        #rightdiv 
-        {
+        #rightdiv {
             background-color: burlywood;
-            display:flex;
-            flex-direction:column;
-
-            border-radius:10px;
-            border-width:2px;
-            border-style:solid;
-            border-color:darkgray;
-            align-items:center;
-
+            display: flex;
+            flex-direction: column;
+            border-radius: 10px;
+            border-width: 2px;
+            border-style: solid;
+            border-color: darkgray;
+            align-items: center;
         }
 
+        #updiv {
+            border-style: solid;
+            border-width: 2px;
+            border-color: darkgray;
+            border-radius: 10px;
+        }
+
+        #downdiv {
+            border-style: solid;
+            border-width: 2px;
+            border-color: darkgray;
+            border-radius: 10px;
+        }
+
+        #title1 {
+            font-size: 20px;
+            font-weight: bold;
+            background-color: lightblue;
+            border-radius: 5px;
+        }
     </style>
 
 </head>
@@ -82,12 +94,47 @@
 <body>
 
     <div id="webdiv">
-        web page
+        
+        <div id="headerdiv" style="display:flex; flex-direction:row;justify-content:center; align-items:center;">
+            <div style="font-size:30pt;color:dodgerblue;text-transform:uppercase;font-weight:bold;">
+                I love Programming!
+            </div>
+            <div>
+                <img src="a.svg" style="height:100px;"/>
+            </div>
+
+        </div>
 
         <div id="bodydiv">
-            
+
             <div id="leftdiv">
-                left
+                <div id="updiv" style="width:480px;">
+
+                    <span id="title1">
+                        What I already learned:
+                    </span>
+
+                    <ul>
+                        <li>C#</li>
+                        <li>C# Entity Framework</li>
+                        <li>Database Sqlite</li>
+                        <li>HTML & CSS</li>
+                    </ul>
+
+                </div>
+                <div id="downdiv" style="width:480px;">
+                    <span id="title2" style="font-size:20px;font-weight:bold;">
+                        What I am going to learn next:
+                    </span>
+
+                    <ol>
+                        <li>Java Script</li>
+                        <li> BootStrap</li>
+                        <li> ASP.NET MVC</li>
+                        <li> Web REST API</li>
+
+                    </ol>
+                </div>
             </div>
 
             <div id="rightdiv">
@@ -106,12 +153,12 @@
         </div>
     </div>
 
-    <div id= "maindiv">
-        <div class = "d1"> div1</div>
+    <div id="maindiv">
+        <div class="d1"> div1</div>
         <div class="d1">div2</div>
         <div class="d1">div3</div>
 
     </div>
-         </body>
+</body>
 
 </html>
