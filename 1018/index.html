@@ -1,0 +1,57 @@
+<html>
+<head>
+    <title> MIS 3033 October 18, 2023 JavaScript 2</title>
+    <style>
+        #main {
+            background-color: lightblue;
+            width: 600px;
+            display: flex;
+            flex-direction: row;
+        }
+
+        .divstyle {
+            background-color: lightgoldenrodyellow;
+            height: 400px;
+            width: 300px;
+            border-style: solid;
+        }
+
+        .divstyle2 
+        {
+            background-color: aquamarine;
+            border-style: dashed;
+            height:200px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="main">
+        <div id="left" class="divstyle"> div1 </div>
+        <div id="right" class="divstyle">
+
+            <div id="up" class="divstyle2">
+                up
+            </div>
+
+            <div id="down" class="divstyle2">
+                down
+            </div>
+
+            <script>
+                {
+                    "use strict";
+                    document.querySelector("#down").innerHTML = "DOWN";
+                }
+            </script>
+
+        </div>
+
+
+    </div>
+
+</body>
+
+
+
+</html>
