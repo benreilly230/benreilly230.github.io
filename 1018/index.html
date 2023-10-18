@@ -16,16 +16,119 @@
             border-style: solid;
         }
 
-        .divstyle2 
-        {
+        .divstyle2 {
             background-color: aquamarine;
             border-style: dashed;
-            height:200px;
+            height: 200px;
         }
     </style>
+
+    <script>
+        "use strict";
+        let k; //global variable
+        k = 100;
+        {
+            // define variable
+            let i;  // keyword to define a local variable
+            var j; // keyword to define a global variable
+            j = 10;
+            j = 36.6;
+            console.log(j);
+
+            j = "hello";
+            j = 'hello';
+            i = 120.6
+            j = `Hello weight is ${i} ${i}`;
+            console.log(j);
+
+            function f1(p1,p2)
+            {
+                return p1 + p2;
+            }
+
+            j = f1(2, 3)
+            console.log(j);
+
+            let f2 = (p1, p2) => { return p1 * p2; };
+            j = f2(2, 3);
+            console.log(j);
+
+
+            let f3 = (p1) => { return p1 * p1 * p1; };
+            j = f3(3);
+            console.log(j)
+
+            let f4 = p1 => p1 * p1 * p1;
+            j = f4(2);
+            console.log(j);
+
+            // object
+            let stu = { name: "Ben Reilly", age: 30, grade: 96.6 };
+            console.log(stu.grade);
+
+            // array
+            let arr1;
+            arr1 = [20, 19, 22, 23];
+
+            for (let ii =0;ii < arr1.length;ii++)
+            {
+                console.log(arr1[ii]);
+            }
+
+            let arr2 = arr1.map((item) =>
+            {
+                return {age:item};
+            });
+            console.log(arr2);
+
+
+        }
+
+        {
+            let i;
+            console.log(j);
+        }
+    </script>
+
+    <script>
+        {
+            let i;
+        }
+    </script>
+
+    <style>
+        .st1 
+        {
+            width: 100px;
+            height:100px;
+            border-style:solid;
+            border-width: 1px;
+        }
+        .st2
+        {
+            width: 200px;
+            height: 200px;
+            border-style: dashed;
+            border-width: 5px;
+        }
+    </style>
+
 </head>
 
 <body>
+
+    <input type="text" style="width:100px;" id="cat" />
+    <button id="btn"> Submit </button>
+    <div id="d1"> </div>
+    <script>
+        "use strict";
+        {
+            document.querySelector("#d1").classList.add("st2");
+            document.querySelector("#cat").value = "Ben Reilly";
+        }
+    </script>
+
+
     <div id="main">
         <div id="left" class="divstyle"> div1 </div>
         <div id="right" class="divstyle">
