@@ -1,18 +1,153 @@
 <html>
 
 <head>
-    <title>[Exam code] Ben Reilly Exam 2 MIS 3033 </title>
+    <title>[IRZX] Ben Reilly Exam 2 MIS 3033 </title>
+    <style>
+        #main
+        {
+            width:800px;
+        }
+        .main 
+        {
+            
+            border-style: solid;
+            border-color: lightgrey;
+            border-radius: 5px;
+            display:flex;
+            flex-direction:row;
+        }
+
+        .t
+        {
+            text-transform:uppercase;
+            border-radius: 5px;
+            background-color: lightskyblue;
+           
+        }
+
+        #b1 
+        {
+            display: flex;
+            flex-direction: row;
+            
+        }
+        #n1
+        {
+           
+            display:flex; 
+            flex-direction:column;
+            justify-content:end;
+        }
+        
+    </style>
 </head>
 
 <body>
-    <img src="static/head1(3).png" style= "height:100px;"/>
-    <img src="static/head2(3).png" style= "height:100px;"/>
-    <img src="static/html.svg" style= "height:100px;"/>
-    <img src="static/javascript.svg" style= "height:100px;"/>
-    <img src="static/css.svg" style= "height:100px;"/>
-    <img src="static/linkedin(2).png" style= "height:100px;"/>
-    <img src="static/sqlite.svg" style= "height:100px;"/>
-    <img src="static/logo.svg" style= "height:100px;"/>
+
+    <div id="main">
+
+        <div id="head" style="display: flex; flex-direction:row; align-items:center;" >
+            
+            <span style="display:flex; flex-direction: column; justify-content:center;width:200px;height:70px; align-items:center;" class="main">
+
+                MIS 3033 Exam 2
+
+                <br />
+                <span>
+                    Ben Reilly
+                </span>
+            </span>  
+           
+           
+            
+            
+                <span class="main" style="width:200px; height:70px; align-items:center; justify-content:center;"> [IRZX]</span> 
+           
+            
+        </div>
+
+        <div id="b1" class="main">
+            <img src="static/head1(3).png" style="height:60px;"/>
+            <span style="display:flex; flex-direction:column;">
+                Ben Reilly
+                <br />
+                MIS Student
+            </span>
+            
+
+            <a href="https://www.linkedin.com/">
+
+                <img src="static/linkedin(2).png" style="height:30px;" />
+            </a>
+
+            
+        </div>
+         
+        <div id="b2">
+            <div class="main" style="width:510px; height:110px; display:flex; flex-direction:column; justify-content:end;">
+                <span class="t">
+                    ABOUT ME:
+                </span>
+                <p>
+                    I am a MIS student. I like programming and I am good at C#. I leaned Entity Framework for Database Manipulations. I know HTML, CSS and I started to learn JavaScript. It is fun. Later I will learn C# .NET MVC Dynamic Web App development and Web API development.
+                </p>
+            </div>
+
+            <div id="n1" class="main">
+                <span class="t">
+                    RECENT NEWS:
+                </span>
+                <ul>
+                    <li> Learned C#</li>
+                    <li> Learned Entity Framework</li>
+                    <li>
+                        Learned
+                        <img src="static/sqlite.svg" style="height:40px;" />
+                    </li>
+                </ul>
+
+                <div class="main">
+                    <span class="t">
+                        ACHIEVEMENTS
+                    </span>
+                    <div>
+                        <img src="static/html.svg" style="height:100px;" />
+                        <img src="static/javascript.svg" style="height:100px;" />
+                        <img src="static/css.svg" style="height:100px;" />
+                    </div>
+                       
+                   
+                  
+                </div>
+            </div>
+           
+
+            <div style="height:60px; display:flex; flex-direction:row; justify-content:right; align-content:center;" class="main">
+                <span style="font-weight:bold; font-size:20px; color:grey; ">
+                    Developed by Ben Reilly for MIS 3033 Exam 2
+                </span>
+                <img src="static/logo.svg" style="height:50px;" />
+            </div>
+                
+           
+           
+
+        </div>
+
+
+
+
+    </div>
+
+
+
+
+
+    
+    
+    
+    
+    
 </body>
 
 
