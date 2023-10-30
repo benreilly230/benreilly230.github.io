@@ -2,13 +2,64 @@
 <head>
     <title> MIS3033 October 30 Ben Reilly </title>
     <style>
-        #d1 {
+        .m-bd-callout
+        {
+            padding: 1.25rem;
+            margin-top: 1.25rem;
+            margin-bottom: 1.25rem;
+            border: 1px solid #e9ecef;
+            border-left-width: 0.25rem;
+            border-radius: 0.25rem;
+        }
+
+        .m-bd-callout-secondary
+        {
+            border-left-color: #6c757d;
+        }
+
+        .m-bd-callout-primary 
+        {
+            border-left-color: #007bff;
+        }
+
+        .m-bd-callout-success
+        {
+            border-left-color: #28a745;
+        }
+
+        .m-bd-callout-info 
+        {
+            border-left-color: #5bc0de;
+        }
+
+        .m-bd-callout-warning 
+        {
+            border-left-color: #f0ad4e;
+        }
+
+        .m-bd-callout-danger 
+        {
+            border-left-color: #d9534f;
+        }
+
+        .m-bd-callout-light
+        {
+            border-left-color: #f8f9fa;
+        }
+
+        .m-bd-callout-dark
+        {
+            border-left-color: #212529;
+        }
+        #d1 
+        {
             width: 100px;
             height: 100px;
             background-color: dodgerblue;
         }
 
-        .sty1 {
+        .sty1 
+        {
             width: 300px;
             height: 200px;
             border-style: solid;
@@ -17,7 +68,8 @@
             margin-left: 20px;
         }
 
-        .sty2 {
+        .sty2 
+        {
             width: 200px;
             height: 100px;
             border-style: solid;
@@ -32,23 +84,84 @@
 
 </head>
 
-<body>
-
-    <div id="d1">
-        <script src="site.js">
-        </script>
+<body style="margin:20px;">
+    <div>
+        <div id="d1"></div>
     </div>
+    <script>
+        "use strict";
+        {
+            let d1 = document.querySelector("#d1");
+            d1.addEventListener("mouseover", f2);
+            function f2()
+            {
+                d1.style.backgroundColor = "red";
+            }
+        }
+
+        d1.addEventListener("mouseout", f3);
+        function f3() {
+            d1.style.backgroundColor = "green";
+        }
+
+    </script>
+    
 
 
-    <div class="sty1">
+    <div class="m-bd-callout m-bd-callout-primary">
         <button id="btn2" class="btn btn-sm btn-primary"> Get Excuse </button>
         <div class="sty2" id="d2"></div>
     </div>
+    <script>
+        "use strict";
+        {
+            let btn2;
+            btn2 = document.querySelector("#btn2");
+            btn2.addEventListener("click", () => { f2(); });
 
-    <div class="sty1">
+            var g; // global variable
+
+            async function f2()
+            {
+                // fetch function is async
+                let r = await fetch("https://excuser-three.vercel.app/v1/excuse/college/");
+
+                var rj = await r.json();
+
+                let d2 = document.querySelector("#d2");
+                d2.innerHTML = rj[0].excuse
+
+                g = rj;
+
+                alert("Button clicked");
+            }
+            
+
+        }
+    </script>
+
+
+
+    <div class="m-bd-callout m-bd-callout-danger" style="width:300px;">
         <button id="btn3"> Get Cat Fact </button>
         <div class="sty2" id="d3"></div>
     </div>
+
+    <script>
+        "use strict";
+        {
+            let btn3 = document.querySelector("#btn3");
+            btn3.addEventListener("click", async () =>
+            {
+                let r = await fetch("https://catfact.ninja/fact");
+                let rj = await r.json();
+                g = rj;
+                let d3 = document.querySelector("#d3");
+                d3.innerHTML = rj.fact;
+            });
+        }
+    </script>
+
 
     <div class="sty1">
         <input type="text" id="agetxt" />
