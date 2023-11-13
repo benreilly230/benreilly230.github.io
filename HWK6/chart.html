@@ -122,10 +122,22 @@
                 console.log(rj);
                 g = rj;
 
+                {
+                    let stu;
+                    stu = 1;
+                    stu = "Ben";
+                    stu = { id: "s123", name: "Ben", grade: 96.6, };
+
+                    console.log(stu.grade);
+
+                }
+
+                
 
                 let params =
                 {
-                    type: 'bar',
+                    // define objects inside curly brackets
+                    type: 'bar', //this will change the type of graph displayed
                     data: {
                         labels: rj.map(x => x.lg),
                         datasets: [

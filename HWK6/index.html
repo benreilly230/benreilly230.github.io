@@ -41,6 +41,7 @@
     <script>
         "use strict";
         var grid = null;
+        var g;
         {
             let btn1 = document.querySelector("#btn1");
             let btn2 = document.querySelector("#btn2");
@@ -69,6 +70,9 @@
                 let r = await fetch(url);
                 let rj = await r.json();
                 // console.log(rj);
+
+                g = rj;
+
 
                 let tableDiv = document.querySelector("#table");
                 tableDiv.innerHTML = "";
