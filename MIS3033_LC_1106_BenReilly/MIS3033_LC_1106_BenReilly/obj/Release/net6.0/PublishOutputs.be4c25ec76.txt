@@ -1,7 +1,0 @@
-C:\Users\benre\OneDrive\Fall 2023 Semester\MIS 3033\HTMLcss\benreilly230.github.io\MIS3033_LC_1106_BenReilly\MIS3033_LC_1106_BenReilly\obj\Release\net6.0\PubTmp\Out\MIS3033_LC_1106_BenReilly.exe
-C:\Users\benre\OneDrive\Fall 2023 Semester\MIS 3033\HTMLcss\benreilly230.github.io\MIS3033_LC_1106_BenReilly\MIS3033_LC_1106_BenReilly\obj\Release\net6.0\PubTmp\Out\appsettings.Development.json
-C:\Users\benre\OneDrive\Fall 2023 Semester\MIS 3033\HTMLcss\benreilly230.github.io\MIS3033_LC_1106_BenReilly\MIS3033_LC_1106_BenReilly\obj\Release\net6.0\PubTmp\Out\appsettings.json
-C:\Users\benre\OneDrive\Fall 2023 Semester\MIS 3033\HTMLcss\benreilly230.github.io\MIS3033_LC_1106_BenReilly\MIS3033_LC_1106_BenReilly\obj\Release\net6.0\PubTmp\Out\MIS3033_LC_1106_BenReilly.dll
-C:\Users\benre\OneDrive\Fall 2023 Semester\MIS 3033\HTMLcss\benreilly230.github.io\MIS3033_LC_1106_BenReilly\MIS3033_LC_1106_BenReilly\obj\Release\net6.0\PubTmp\Out\MIS3033_LC_1106_BenReilly.deps.json
-C:\Users\benre\OneDrive\Fall 2023 Semester\MIS 3033\HTMLcss\benreilly230.github.io\MIS3033_LC_1106_BenReilly\MIS3033_LC_1106_BenReilly\obj\Release\net6.0\PubTmp\Out\MIS3033_LC_1106_BenReilly.runtimeconfig.json
-C:\Users\benre\OneDrive\Fall 2023 Semester\MIS 3033\HTMLcss\benreilly230.github.io\MIS3033_LC_1106_BenReilly\MIS3033_LC_1106_BenReilly\obj\Release\net6.0\PubTmp\Out\MIS3033_LC_1106_BenReilly.pdb
